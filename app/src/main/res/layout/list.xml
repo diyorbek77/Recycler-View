@@ -1,11 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
     <android.support.v7.widget.CardView
+        android:layout_margin="16dp"
+        android:padding="16dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.subinkrishna.widget.CircularImageView
+                android:id="@+id/imagecirc"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/one"
+                app:ci_borderWidth="2dp"
+                app:ci_borderColor="@android:color/white"
+                app:ci_placeholderBackgroundColor="@android:color/black"
+                app:ci_placeholderText="CV"
+                app:ci_placeholderTextSize="22sp"
+                app:ci_placeholderTextColor="@android:color/white"
+                app:ci_shadowRadius="5.0"
+                app:ci_shadowColor="#999999" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_margin="16dp"
+                    android:textSize="18sp"
+                    android:text="Diyorbek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/age"
+                    android:layout_margin="16dp"
+                    android:textSize="18sp"
+                    android:text="17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
 </RelativeLayout>
